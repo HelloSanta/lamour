@@ -1,0 +1,1063 @@
+        /**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+        /* Import Sass mixins, variables, Compass modules, etc. */
+        
+        @import "init";
+        /* HTML element (SMACSS base) rules */
+        
+        @import "normalize";
+        /* Layout rules */
+        
+        @import "_mixin.scss";
+        @import "layouts/responsive";
+        /* Component (SMACSS module) rules */
+        
+        @import "components/misc";
+        // Optionally, add your own components here.
+        @import "print";
+        /* SMACSS theme rules */
+        /* @import "theme-A"; */
+        /* @import "theme-B"; */
+        
+        $main:#D43F3F;
+        //for  all  code ------------------------------------------------------------------------------------------------------------------------------------------
+        $main-color1:#FBD2E2;
+        $main-color2:#FFEEF4;
+        $main-color3:#F090B6;
+        $border-color: #F090B6;
+        $block-margin-top:40px;
+        $block-padding:0px 20px;
+        body {
+            //background-color: black;
+            font-family: Helvetica, Arial, "微軟正黑體"!important;
+            .ajax-progress-throbber {
+                display: none
+            }
+            h1 {
+                margin: 0px;
+                color: $main-color3;
+                font-weight: bold;
+                font-size: 40px;
+            }
+            h2 {
+                margin: 0px;
+                color: $main-color3;
+                font-weight: normal;
+                font-size: 22px;
+            }
+            p {
+                margin: 0px;
+                line-height: 2em;
+                color: #747474;
+            }
+            ul {
+                margin: 0px;
+                padding: 0px;
+            }
+            li {
+                list-style-type: none;
+                list-style-image: none;
+            }
+            a {
+                text-decoration: none;
+                outline: none!important;
+                color: $main-color3;
+                &:hover {
+                    color: $main!important;
+                }
+            }
+            img {
+                width: 100%;
+                height: auto!important;
+            }
+            #navigation {
+                display: none;
+            }
+            .block {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        
+        //end for  all  code --------------------------------------------------------------------------------
+        //region-code---------------------------------------------------------------------------------------------------------------------------------------------------
+        body {
+            #page {
+                //for header code------------------------------------------------------------------------------------------------------------
+                #header {
+                    position: relative;
+                    padding: 20px;
+                    #logo {
+                        float: left;
+                    }
+                    .header__region {
+                        clear: none;
+                        //logo2-------------------------------------------------
+                        #block-imageblock-2 {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            @include transform-xy(-50%, -50%);
+                            img {
+                                width: auto;
+                                vertical-align: middle;
+                            }
+                        }
+                        //次選單-----------------------------------------------------------------------
+                        #block-menu-menu-header-menu {
+                            float: right;
+                            margin-right: 20px;
+                            margin-top: 10px;
+                            .menu {
+                                .menu__item {
+                                    display: inline-block;
+                                    background: $main-color1;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 100px;
+                                    line-height: 30px;
+                                    a {
+                                        color: #ffffff;
+                                    }
+                                    .link-badge-text {
+                                        display: none;
+                                    }
+                                    p {
+                                        display: none;
+                                    }
+                                    .link-badge-badge-wrapper {
+                                        .link-badge {
+                                            background: #ffffff!important;
+                                            color: $main-color3!important;
+                                            border-color: $main-color3!important;
+                                            box-shadow: none!important;
+                                            text-shadow: none!important;
+                                        }
+                                    }
+                                    .fa-shopping-cart {
+                                        color: rgba(0, 0, 0, 0);
+                                        &:before {
+                                            color: #ffffff;
+                                            padding-left: 3px;
+                                        }
+                                        &:hover {
+                                            color: rgba(0, 0, 0, 0)!important;
+                                            &:before {
+                                                color: $main;
+                                            }
+                                        }
+                                    }
+                                    .link-badge-wrapper {
+                                        &:before {
+                                            padding: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //主選單------------------------------------------------------------------------
+                        .main-menu {
+                            transition: all .25s;
+                            position: fixed;
+                            top: 70px;
+                            right: 35px;
+                            z-index: 200;
+                            cursor: pointer;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            //overflow: scroll;
+                            height: 30px;
+                            width: 80px;
+                            font-size: 18px;
+                            &:after {
+                                content: "Menu";
+                                position: absolute;
+                                right: 10px;
+                                top: 3px;
+                                color: #c0c0c0;
+                            }
+                            .bar {
+                                position: absolute;
+                                right: 55px;
+                                top: 13px;
+                                height: 4px;
+                                width: 20px;
+                                border-radius: 15px;
+                                background-color: #c0c0c0;
+                                &:before {
+                                    transition: all .25s;
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: -6px;
+                                    height: 4px;
+                                    width: 20px;
+                                    border-radius: 15px;
+                                    background-color: #c0c0c0;
+                                }
+                                &:after {
+                                    transition: all .25s;
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: 6px;
+                                    height: 4px;
+                                    width: 20px;
+                                    border-radius: 15px;
+                                    background-color: #c0c0c0;
+                                }
+                            }
+                            ul {
+                                transition: all .05s;
+                                position: fixed;
+                                right: -9000px;
+                            }
+                        }
+                        .menu-expanded {
+                            transition: all .25s;
+                            text-align: center;
+                            //line-height: 200px;
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 0px;
+                            top: 0!important;
+                            right: 0!important;
+                            background-color: rgba(245, 175, 177, 0.85);
+                            &:after {
+                                display: none;
+                            }
+                            ul {
+                                transition: all .05s;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                @include transform-xy(-50%, -50%);
+                                z-index: 600;
+                                li {
+                                    list-style: none;
+                                    padding: 20px;
+                                    &:after {
+                                        content: "";
+                                        display: block;
+                                        height: 1px;
+                                        width: 70px;
+                                        margin: 0 auto;
+                                        background: #ffffff;
+                                        margin-top: 30px;
+                                    }
+                                    a {
+                                        transition: all .15s;
+                                        text-decoration: none;
+                                        color: #ffffff;
+                                        //font-size: 2em;
+                                        font-family: 'Quicksand', sans-serif;
+                                        padding: 5px;
+                                        &:hover {
+                                            transition: all .15s;
+                                            color: $main;
+                                        }
+                                    }
+                                }
+                                .last {
+                                    &:after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .bar {
+                                background-color: transparent;
+                                transition: all .25s;
+                                top: 80px;
+                                right: 50px;
+                                &:before {
+                                    transition: all .25s;
+                                    content: "";
+                                    transform: rotate(45deg);
+                                    top: -0px;
+                                    background: #ffffff;
+                                }
+                                &:after {
+                                    transition: all .25s;
+                                    content: "";
+                                    transform: rotate(-45deg);
+                                    top: 0px;
+                                    background: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+                //end header code--------------------------------------------------------------
+                #main {
+                    padding: 0px;
+                    //for content code-------------------------------------------------------------------------------------------------------
+                    #content {
+                        //for 圖片輪撥 block--------------------------------------------------------------------------
+                        #block-revslider-1 {
+                            clear: both;
+                            .tp-bullets {
+                                left: 95%!important;
+                                top: 20px;
+                                z-index: 50;
+                            }
+                        }
+                        #rs-wrapper-2 {
+                            .tp-bullets {
+                                left: 90%!important;
+                                top: 20px;
+                                z-index: 50;
+                            }
+                        }
+                        //end 圖片輪撥 block---------------------------------------------------
+                        //responsive次選單-----------------------------------------------------------------------
+                        #block-multiblock-1 {
+                            text-align: center;
+                            margin-top: 35px;
+                            .block-title {
+                                display: none;
+                            }
+                            .menu {
+                                .menu__item {
+                                    display: inline-block;
+                                    background: $main-color1;
+                                    width: 60px;
+                                    height: 60px;
+                                    text-align: center;
+                                    border-radius: 100px;
+                                    line-height: 60px;
+                                    font-size: 30px;
+                                    margin: 0 5px;
+                                    a {
+                                        color: #ffffff;
+                                    }
+                                    .link-badge-text {
+                                        display: none;
+                                    }
+                                    p {
+                                        display: none;
+                                    }
+                                    .link-badge-badge-wrapper {
+                                        top: -20px;
+                                        .link-badge {
+                                            background: #ffffff!important;
+                                            color: $main-color3!important;
+                                            border-color: $main-color3!important;
+                                            box-shadow: none!important;
+                                            text-shadow: none!important;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                    .fa-shopping-cart {
+                                        color: rgba(0, 0, 0, 0);
+                                        &:before {
+                                            color: #ffffff;
+                                            padding-left: 5px;
+                                        }
+                                        &:hover {
+                                            color: rgba(0, 0, 0, 0)!important;
+                                            &:before {
+                                                color: $main;
+                                            }
+                                        }
+                                    }
+                                    .link-badge-wrapper {
+                                        &:before {
+                                            padding: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //end responsive 次選單---------------------------------------------
+                        //for 產品介紹 block-------------------------------------------------------------------------
+                        #block-views-lamour-product-block {
+                            clear: both;
+                            @extend %clearfix;
+                            max-width: 1440px;
+                            margin: 0 auto;
+                            margin-top: $block-margin-top;
+                            padding: $block-padding;
+                            .view-content {
+                                .item-list {
+                                    li.views-row {
+                                        margin-top: 40px;
+                                        position: relative;
+                                        box-sizing: border-box;
+                                        border: 1px solid $border-color;
+                                        padding: 30px 50px;
+                                        /*.views-field-title {
+                                                position: absolute;
+                                                top: -50px;
+                                                left: 30px;
+                                                padding: 0 20px;
+                                                background-color: #ffffff;
+                                                h1 {
+                                                    font-size: 50px;
+                                                }
+                                            }*/
+                                        .views-field-body {
+                                            padding-top: 20px;
+                                        }
+                                        .views-field-body-1 {
+                                            a {
+                                                padding: 0px 5px;
+                                                color: $main-color3;
+                                                border-bottom: 1px solid $main-color3;
+                                            }
+                                        }
+                                        .buy-car {
+                                            @include transition(all 0s);
+                                            .cart-botton-wrape {
+                                                position: relative;
+                                                background-color: $main-color3;
+                                                border: 1px solid $main-color3;
+                                                border-radius: 100px;
+                                                //width: 130px;
+                                                //height: 130px;
+                                                margin: 0 auto;
+                                                overflow: hidden;
+                                                &:hover {
+                                                    &:after {
+                                                        content: "";
+                                                        display: block;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background: rgba(255, 255, 255, 0.2);
+                                                        @include transition(all 0.5s);
+                                                        position: absolute;
+                                                        z-index: 300;
+                                                    }
+                                                }
+                                                &:before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    display: block;
+                                                    width: 100%;
+                                                    height: 50%;
+                                                    background-color: #ffffff;
+                                                    z-index: 10;
+                                                }
+                                                .add-cart {
+                                                    .form-submit {
+                                                        position: absolute;
+                                                        border: none;
+                                                        width: 100%;
+                                                        height: 200%;
+                                                        text-align: center;
+                                                        top: -70px;
+                                                        left: 0px;
+                                                        background-color: rgba(0, 0, 0, 0);
+                                                        z-index: 15;
+                                                        color: $main-color3;
+                                                    }
+                                                }
+                                                .price {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    text-align: center;
+                                                    bottom: 20%;
+                                                    color: #ffffff;
+                                                }
+                                            }
+                                        }
+                                        .views-field-field-buy-now {
+                                            #button-field-dummy-form--2 {
+                                                //text-align: center;
+                                            }
+                                            input {
+                                                background: none;
+                                                border: 0px solid;
+                                                color: $main-color3;
+                                                border-bottom: 1px solid $border-color;
+                                                border-radius: 0px
+                                            }
+                                            input:hover {
+                                                color: $main;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //end 產品介紹 block-------------------------------------------------
+                        //for 產品功效 block  -------------------------------------------------------------------------
+                        #block-views-lamour-introduction-block {
+                            @extend %clearfix;
+                            clear: both;
+                            margin-top: $block-margin-top;
+                            .view-content {
+                                .item-list {
+                                    ul {
+                                        li.views-row {
+                                            width: 100%;
+                                            @extend %clearfix;
+                                            .views-field-body {
+                                                .views-field-wrape {
+                                                    .views-field-title-wrape {
+                                                        position: relative;
+                                                        background: $main-color1;
+                                                        @extend %text-v-center;
+                                                        text-align: center;
+                                                        box-sizing: border-box;
+                                                        .content {
+                                                            &:after {
+                                                                content: "▼";
+                                                                display: block;
+                                                                height: 30px;
+                                                                width: 30px;
+                                                                border: 1px solid $main-color3;
+                                                                color: $main-color3;
+                                                                line-height: 30px;
+                                                                border-radius: 100px;
+                                                                margin: 0 auto;
+                                                                transition: all .25s;
+                                                            }
+                                                            p {
+                                                                color: $main-color3;
+                                                            }
+                                                        }
+                                                    }
+                                                    .views-field-body-wrape {
+                                                        background: $main-color2;
+                                                        padding: 40px;
+                                                        display: none;
+                                                        @extend %clearfix;
+                                                        .views-field-image {}
+                                                        .views-field-body {}
+                                                    }
+                                                }
+                                            }
+                                            .views-field-body-expanded {
+                                                .views-field-wrape {
+                                                    .views-field-title-wrape {
+                                                        .content {
+                                                            &:after {
+                                                                transform: rotate(-180deg);
+                                                                transition: all .25s;
+                                                                line-height: 30px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        li.views-row-1 {
+                                            background: url('/sites/default/files/info_ball.jpg');
+                                            background-position: left top;
+                                            background-repeat: no-repeat;
+                                            background-size: 60%;
+                                        }
+                                        li.views-row-2 {
+                                            background: url('/sites/default/files/info_body.jpg');
+                                            background-position: right top;
+                                            background-repeat: no-repeat;
+                                            background-size: 55%;
+                                        }
+                                        li.views-row-3 {
+                                            background: url('/sites/default/files/info_white.jpg');
+                                            background-position: left top;
+                                            background-repeat: no-repeat;
+                                            background-size: 60%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //end 產品功效 block-------------------------------------------------
+                        //for 產品認證 block-----------------------------------------------------------------------------
+                        #block-views-lamour-quality-block {
+                            clear: both;
+                            .view-content {
+                                padding: 40px 20px;
+                                background: $main-color1;
+                                .item-ist {
+                                    ul {
+                                        li.views-row {}
+                                    }
+                                }
+                            }
+                            .view-footer {
+                                .view-content {
+                                    @extend %clearfix;
+                                    background: $main-color2;
+                                    .item-list {
+                                        ul {
+                                            li.views-row {
+                                                .views-field-field-description {
+                                                    text-align: center;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        //end 產品認證 block------------------------------------------------
+                        //for 部落客推薦 block-------------------------------------------------------------------------
+                        #block-views-lamour-recommend-block {
+                            clear: both;
+                            max-width: 1440px;
+                            margin: 0 auto;
+                            margin-top: $block-margin-top;
+                            padding: $block-padding;
+                            padding-top: 40px;
+                            h2 {
+                                font-size: 22px;
+                            }
+                            .views-wrape {
+                                border: 1px solid $main-color3;
+                                position: relative;
+                                padding: 60px;
+                                /*h1 {
+                                        position: absolute;
+                                        top: -40px;
+                                        right: 40px;
+                                        background-color: #ffffff;
+                                        padding: 0 20px;
+                                        font-size: 60px;
+                                    }*/
+                                .view-content {
+                                    @extend %clearfix;
+                                    .item-list {
+                                        ul {
+                                            li.views-row {
+                                                .field-name-blog-field-body {
+                                                    .field-body {
+                                                        box-sizing: border-box;
+                                                        padding-bottom: 30px;
+                                                    }
+                                                }
+                                                .field-name-field-link {
+                                                    a {
+                                                        color: $main-color3;
+                                                        border-bottom: 1px solid $main-color3;
+                                                    }
+                                                }
+                                            }
+                                            li.views-row-first {
+                                                .field-name-field-image-single {
+                                                    position: relative;
+                                                    &:after {
+                                                        content: "";
+                                                        width: 175px;
+                                                        height: 134px;
+                                                        background-image: url("/sites/default/files/sign.png");
+                                                        background-size: 100%;
+                                                        background-position: center;
+                                                        background-repeat: no-repeat;
+                                                        position: absolute;
+                                                        right: 0px;
+                                                        top: 50%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .item-list {
+                                    .pager {
+                                        a {
+                                            border: 1px solid $border-color;
+                                            padding: 5px 5%;
+                                            color: $main-color3;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //end 部落客推薦 block-----------------------------------------------
+                        //for 最新消息 block-----------------------------------------------------------------------------
+                        #block-views-lamour-news-block {
+                            clear: both;
+                            margin-top: $block-margin-top;
+                            background: url("/sites/default/files/news_background.jpg");
+                            padding: 20px 30px;
+                            @extend %clearfix;
+                            h2 {
+                                color: #ffffff;
+                                margin-bottom: 10px;
+                            }
+                            .view-content {
+                                .item-list {
+                                    ul {
+                                        li.views-row {
+                                            color: #ffffff;
+                                            .views-field-field-image {
+                                                @extend %clearfix;
+                                            }
+                                            .views-field-title {
+                                                margin-top: 10px;
+                                            }
+                                            a {
+                                                color: #ffffff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .item-list {
+                                .pager {
+                                    a {
+                                        color: #ffffff;
+                                        border: 1px solid #ffffff;
+                                        padding: 5px 5%;
+                                    }
+                                }
+                            }
+                            img {
+                                float: left;
+                                width: 100%;
+                                border-radius: 20px;
+                            }
+                        }
+                        //end 最新消息 block--------------------------------------------------
+                    }
+                    //end content code--------------------------------------------------------------------------------------------------------------
+                }
+                #footer {
+                    //for footer 選單----------------------------------------------
+                    #block-menu-menu-footer-menu {
+                        .menu {
+                            text-align: justify;
+                            //height: 45px;
+                            padding: 30px 20px 0px 20px;
+                            &:after {
+                                content: "";
+                                display: inline-block;
+                                width: 100%;
+                            }
+                            a {
+                                color: $main-color3;
+                            }
+                            .menu__item {
+                                display: inline-block;
+                                width: 150px;
+                                padding: 10px 0px;
+                                &:hover {
+                                    a {
+                                        color: $main;
+                                    }
+                                }
+                                .menu {
+                                    padding: 0px;
+                                    width: 100%;
+                                    &:after {
+                                        display: none;
+                                    }
+                                    .menu__item {
+                                        width: 100%;
+                                        padding: 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //end  footer 選單-----------------------------
+                    //footer區塊-----------------------------------------------------------------
+                    #block-block-1 {
+                        border-top: 1px solid $main-color3;
+                        text-align: center;
+                        padding: 20px;
+                        p {
+                            color: $main-color3;
+                        }
+                    }
+                    //footer簡介
+                    #block-block-2 {
+                        margin-top: -25px;
+                        .menu {
+                            text-align: justify;
+                            padding: 0 20px;
+                            &:after {
+                                content: "";
+                                display: inline-block;
+                                width: 100%;
+                            }
+                            p {
+                                color: $main-color3;
+                            }
+                            a:hover {
+                                p {
+                                    color: $main;
+                                }
+                            }
+                            li {
+                                display: inline-block;
+                                width: 150px;
+                                padding: 10px 0px;
+                                vertical-align: top;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        //特定頁面------------------------------------------------------------------------------------------------------------
+        //最新消息node頁------------------------------------------------------
+        .node-type-news {
+            #page-title {
+                text-align: center;
+                background: #ffffff;
+                top: 10px;
+            }
+            #content {
+                max-width: 1440px;
+                margin: 0 auto;
+                padding: 20px 20px 0px 20px;
+                .node-news {
+                    .field-name-body {
+                        border: 1px solid $main-color3;
+                        padding: 40px 20px 20px 20px;
+                    }
+                }
+            }
+        }
+        
+        //user-page--------------------------------------------
+        .page-user {
+            #content {
+                padding: 20px;
+                max-width: 1440px;
+                margin: 0 auto;
+                label {
+                    padding: 10px 0px;
+                    color: $main-color3;
+                }
+                input {
+                    background: #ffffff;
+                    border: 1px solid $main-color3;
+                    padding: 5px;
+                }
+                .description {
+                    color: $main-color3;
+                }
+                #edit-actions {
+                    input {
+                        background: $main-color3;
+                        color: #ffffff;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        
+        //for buy car---------------------------------------------------------------------------
+        table {
+            font-size: 14px;
+            table-layout: fixed;
+            width: 100%;
+            text-align: center;
+            a.active {
+                color: $main;
+            }
+            td {
+                width: 1px;
+                /**white-space: nowrap; // 自适應寬度**/
+                word-break: keep-all; // 避免長單詞截斷，保持全部 
+                height: 32px;
+                vertical-align: middle;
+            }
+            thead {
+                tr {
+                    border-bottom: 1px solid #7a7a7a;
+                    background: $main-color3;
+                    th {
+                        color: #ffffff;
+                        border: 1px #7a7a7a solid;
+                        text-align: center;
+                        height: 32px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            tbody {
+                border: 1px solid #7a7a7a;
+                color: #7a7a7a;
+                tr.odd,
+                tr.even {
+                    border: 0px;
+                    vertical-align: middle;
+                    background-color: transparent;
+                    border: 1px solid #7a7a7a;
+                    input[type="text"] {
+                        text-align: center;
+                        border: 1px #7a7a7a solid;
+                        width: 50%;
+                    }
+                    input[type="submit"] {
+                        border: 0px;
+                        padding: 5px 12px;
+                        border-radius: 5px;
+                        background-color: #00437b;
+                        color: #FFF;
+                    }
+                }
+            }
+            .views-field-edit-quantity {
+                span.commerce-quantity-plusminus-link {
+                    display: none;
+                }
+            }
+        }
+        
+        .checkout-processing {
+            display: none;
+        }
+        
+        #edit-actions,
+        #edit-buttons {
+            //text-align: center;
+            padding: 10px 0px;
+            input {
+                background: $main-color3;
+                color: #ffffff;
+                padding: 10px;
+                margin: 0 10px;
+            }
+        }
+        
+        //end buy car
+        //購物車頁-------------------------------------------------------------------------------
+        .page-cart {
+            #page-title {
+                text-align: center;
+            }
+            #content {
+                max-width: 1440px;
+                margin: 0 auto;
+                padding: 0 20px;
+                table {
+                    td {}
+                    thead {
+                        tr {
+                            border: none;
+                            th {
+                                border: none;
+                            }
+                        }
+                    }
+                    tbody {
+                        border: none;
+                        tr.odd,
+                        tr.even {
+                            border: none;
+                            border-bottom: 1px solid $main-color3;
+                            input[type="text"] {}
+                            input[type="submit"] {
+                                background: $main-color3;
+                                border-color: #ffffff;
+                            }
+                        }
+                        tr.even {
+                            //background: $main-color1;
+                            border-top: 1px solid $main-color3;
+                            border-bottom: 1px solid $main-color3;
+                        }
+                    }
+                }
+                #edit-actions,
+                #edit-buttons {
+                    padding-bottom: 110px!important;
+                    text-align: center;
+                    border-bottom: 1px solid $main-color3;
+                }
+            }
+        }
+        
+        //check page code
+        //結帳頁-------------------------------------------------------------------------
+        .page-checkout {
+            #page-title {
+                text-align: center;
+            }
+            #content {
+                max-width: 1440px;
+                padding: 0 20px;
+                margin: 0 auto;
+                border-bottom: 1px solid $main-color3;
+                .checkout-completion-message {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                table {
+                    td {}
+                    thead {
+                        tr {
+                            th {}
+                        }
+                    }
+                    tbody {
+                        tr.odd,
+                        tr.even {
+                            input[type="text"] {}
+                            input[type="submit"] {}
+                            .pane-data-full {
+                                .field {
+                                    clear: both;
+                                    padding: 10px;
+                                    @extend %clearfix;
+                                    .field-label {
+                                        float: left;
+                                    }
+                                    .field-items {
+                                        float: left;
+                                    }
+                                }
+                            }
+                        }
+                        .pane-title {
+                            background: $main-color3;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                fieldset {
+                    margin-bottom: 20px;
+                    border-color: $main-color1;
+                    .fieldset-legend {
+                        font-size: 30px;
+                        color: $main-color3;
+                    }
+                }
+                #edit-buttons {
+                    border: none;
+                }
+                #edit-account {
+                    input {
+                        max-width: 500px;
+                        width: 100%;
+                        background: #ffffff;
+                        border: 2px solid;
+                    }
+                }
+                #edit-customer-profile-billing {
+                    label {
+                        color: #7a7a7a;
+                    }
+                    input {
+                        max-width: 500px;
+                        width: 100%;
+                        background: #ffffff;
+                        border: 1px solid #7a7a7a;
+                        padding: 10px;
+                    }
+                }
+                #edit-actions,
+                #edit-buttons {
+                    text-align: center;
+                    padding-bottom: 110px!important;
+                    input {
+                        border: none;
+                    }
+                }
+            }
+        }
