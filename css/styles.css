@@ -3783,20 +3783,6 @@ body #page #main #content #block-views-lamour-product-block .view-content .item-
   overflow: hidden;
 }
 /* line 425, ../sass/styles.scss */
-body #page #main #content #block-views-lamour-product-block .view-content .item-list li.views-row .buy-car .cart-botton-wrape:hover:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  position: absolute;
-  z-index: 300;
-}
-/* line 436, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-product-block .view-content .item-list li.views-row .buy-car .cart-botton-wrape:before {
   content: "";
   position: absolute;
@@ -3806,7 +3792,7 @@ body #page #main #content #block-views-lamour-product-block .view-content .item-
   background-color: #ffffff;
   z-index: 10;
 }
-/* line 446, ../sass/styles.scss */
+/* line 435, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-product-block .view-content .item-list li.views-row .buy-car .cart-botton-wrape .add-cart .form-submit {
   position: absolute;
   border: none;
@@ -3819,7 +3805,7 @@ body #page #main #content #block-views-lamour-product-block .view-content .item-
   z-index: 15;
   color: #f090b6;
 }
-/* line 459, ../sass/styles.scss */
+/* line 448, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-product-block .view-content .item-list li.views-row .buy-car .cart-botton-wrape .price {
   position: absolute;
   width: 100%;
@@ -3827,7 +3813,7 @@ body #page #main #content #block-views-lamour-product-block .view-content .item-
   bottom: 20%;
   color: #ffffff;
 }
-/* line 472, ../sass/styles.scss */
+/* line 461, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-product-block .view-content .item-list li.views-row .views-field-field-buy-now input {
   background: none;
   border: 0px solid;
@@ -3835,27 +3821,27 @@ body #page #main #content #block-views-lamour-product-block .view-content .item-
   border-bottom: 1px solid #f090b6;
   border-radius: 0px;
 }
-/* line 479, ../sass/styles.scss */
+/* line 468, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-product-block .view-content .item-list li.views-row .views-field-field-buy-now input:hover {
   color: #d43f3f;
 }
-/* line 489, ../sass/styles.scss */
+/* line 478, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block {
   clear: both;
   margin-top: 40px;
 }
-/* line 496, ../sass/styles.scss */
+/* line 485, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row {
   width: 100%;
 }
-/* line 501, ../sass/styles.scss */
+/* line 490, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row .views-field-body .views-field-wrape .views-field-title-wrape {
   position: relative;
   background: #fbd2e2;
   text-align: center;
   box-sizing: border-box;
 }
-/* line 508, ../sass/styles.scss */
+/* line 497, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row .views-field-body .views-field-wrape .views-field-title-wrape .content:after {
   content: "▼";
   display: block;
@@ -3868,65 +3854,65 @@ body #page #main #content #block-views-lamour-introduction-block .view-content .
   margin: 0 auto;
   transition: all .25s;
 }
-/* line 520, ../sass/styles.scss */
+/* line 509, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row .views-field-body .views-field-wrape .views-field-title-wrape .content p {
   color: #f090b6;
 }
-/* line 525, ../sass/styles.scss */
+/* line 514, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row .views-field-body .views-field-wrape .views-field-body-wrape {
   background: #ffeef4;
   padding: 40px;
   display: none;
 }
-/* line 539, ../sass/styles.scss */
+/* line 528, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row .views-field-body-expanded .views-field-wrape .views-field-title-wrape .content:after {
   transform: rotate(-180deg);
   transition: all .25s;
   line-height: 30px;
 }
-/* line 549, ../sass/styles.scss */
+/* line 538, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row-1 {
   background: url("/sites/default/files/info_ball.jpg");
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 60%;
 }
-/* line 555, ../sass/styles.scss */
+/* line 544, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row-2 {
   background: url("/sites/default/files/info_body.jpg");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 55%;
 }
-/* line 561, ../sass/styles.scss */
+/* line 550, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-introduction-block .view-content .item-list ul li.views-row-3 {
   background: url("/sites/default/files/info_white.jpg");
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 60%;
 }
-/* line 573, ../sass/styles.scss */
+/* line 562, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-quality-block {
   clear: both;
 }
-/* line 575, ../sass/styles.scss */
+/* line 564, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-quality-block .view-content {
   padding: 40px 20px;
   background: #fbd2e2;
 }
-/* line 585, ../sass/styles.scss */
+/* line 574, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-quality-block .view-footer .view-content {
   background: #ffeef4;
 }
-/* line 591, ../sass/styles.scss */
+/* line 580, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-quality-block .view-footer .view-content .item-list ul li.views-row .views-field-field-description {
   text-align: center;
 }
-/* line 599, ../sass/styles.scss */
+/* line 588, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-quality-block img {
   width: 100%;
 }
-/* line 605, ../sass/styles.scss */
+/* line 594, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block {
   clear: both;
   max-width: 1440px;
@@ -3935,11 +3921,11 @@ body #page #main #content #block-views-lamour-recommend-block {
   padding: 0px 20px;
   padding-top: 40px;
 }
-/* line 612, ../sass/styles.scss */
+/* line 601, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block h2 {
   font-size: 22px;
 }
-/* line 615, ../sass/styles.scss */
+/* line 604, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block .views-wrape {
   border: 1px solid #f090b6;
   position: relative;
@@ -3953,21 +3939,21 @@ body #page #main #content #block-views-lamour-recommend-block .views-wrape {
           font-size: 60px;
       }*/
 }
-/* line 633, ../sass/styles.scss */
+/* line 622, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block .views-wrape .view-content .item-list ul li.views-row .field-name-blog-field-body .field-body {
   box-sizing: border-box;
   padding-bottom: 30px;
 }
-/* line 639, ../sass/styles.scss */
+/* line 628, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block .views-wrape .view-content .item-list ul li.views-row .field-name-field-link a {
   color: #f090b6;
   border-bottom: 1px solid #f090b6;
 }
-/* line 646, ../sass/styles.scss */
+/* line 635, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block .views-wrape .view-content .item-list ul li.views-row-first .field-name-field-image-single {
   position: relative;
 }
-/* line 648, ../sass/styles.scss */
+/* line 637, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block .views-wrape .view-content .item-list ul li.views-row-first .field-name-field-image-single:after {
   content: "";
   width: 175px;
@@ -3980,121 +3966,121 @@ body #page #main #content #block-views-lamour-recommend-block .views-wrape .view
   right: 0px;
   top: 50%;
 }
-/* line 667, ../sass/styles.scss */
+/* line 656, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-recommend-block .views-wrape .item-list .pager a {
   border: 1px solid #f090b6;
   padding: 5px 5%;
   color: #f090b6;
 }
-/* line 678, ../sass/styles.scss */
+/* line 667, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-news-block {
   clear: both;
   margin-top: 40px;
   background: url("/sites/default/files/news_background.jpg");
   padding: 20px 30px;
 }
-/* line 684, ../sass/styles.scss */
+/* line 673, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-news-block h2 {
   color: #ffffff;
   margin-bottom: 10px;
 }
-/* line 691, ../sass/styles.scss */
+/* line 680, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-news-block .view-content .item-list ul li.views-row {
   color: #ffffff;
 }
-/* line 696, ../sass/styles.scss */
+/* line 685, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-news-block .view-content .item-list ul li.views-row .views-field-title {
   margin-top: 10px;
 }
-/* line 699, ../sass/styles.scss */
+/* line 688, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-news-block .view-content .item-list ul li.views-row a {
   color: #ffffff;
 }
-/* line 708, ../sass/styles.scss */
+/* line 697, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-news-block .item-list .pager a {
   color: #ffffff;
   border: 1px solid #ffffff;
   padding: 5px 5%;
 }
-/* line 715, ../sass/styles.scss */
+/* line 704, ../sass/styles.scss */
 body #page #main #content #block-views-lamour-news-block img {
   float: left;
   width: 100%;
   border-radius: 20px;
 }
-/* line 728, ../sass/styles.scss */
+/* line 717, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu {
   text-align: justify;
   padding: 30px 20px 0px 20px;
 }
-/* line 732, ../sass/styles.scss */
+/* line 721, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu:after {
   content: "";
   display: inline-block;
   width: 100%;
 }
-/* line 737, ../sass/styles.scss */
+/* line 726, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu a {
   color: #f090b6;
 }
-/* line 740, ../sass/styles.scss */
+/* line 729, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu .menu__item {
   display: inline-block;
   width: 150px;
   padding: 10px 0px;
 }
-/* line 745, ../sass/styles.scss */
+/* line 734, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu .menu__item:hover a {
   color: #d43f3f;
 }
-/* line 749, ../sass/styles.scss */
+/* line 738, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu .menu__item .menu {
   padding: 0px;
   width: 100%;
 }
-/* line 752, ../sass/styles.scss */
+/* line 741, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu .menu__item .menu:after {
   display: none;
 }
-/* line 755, ../sass/styles.scss */
+/* line 744, ../sass/styles.scss */
 body #page #footer #block-menu-menu-footer-menu .menu .menu__item .menu .menu__item {
   width: 100%;
   padding: 0px;
 }
-/* line 765, ../sass/styles.scss */
+/* line 754, ../sass/styles.scss */
 body #page #footer #block-block-1 {
   border-top: 1px solid #f090b6;
   text-align: center;
   padding: 20px;
 }
-/* line 769, ../sass/styles.scss */
+/* line 758, ../sass/styles.scss */
 body #page #footer #block-block-1 p {
   color: #f090b6;
 }
-/* line 774, ../sass/styles.scss */
+/* line 763, ../sass/styles.scss */
 body #page #footer #block-block-2 {
   margin-top: -25px;
 }
-/* line 776, ../sass/styles.scss */
+/* line 765, ../sass/styles.scss */
 body #page #footer #block-block-2 .menu {
   text-align: justify;
   padding: 0 20px;
 }
-/* line 779, ../sass/styles.scss */
+/* line 768, ../sass/styles.scss */
 body #page #footer #block-block-2 .menu:after {
   content: "";
   display: inline-block;
   width: 100%;
 }
-/* line 784, ../sass/styles.scss */
+/* line 773, ../sass/styles.scss */
 body #page #footer #block-block-2 .menu p {
   color: #f090b6;
 }
-/* line 788, ../sass/styles.scss */
+/* line 777, ../sass/styles.scss */
 body #page #footer #block-block-2 .menu a:hover p {
   color: #d43f3f;
 }
-/* line 792, ../sass/styles.scss */
+/* line 781, ../sass/styles.scss */
 body #page #footer #block-block-2 .menu li {
   display: inline-block;
   width: 150px;
@@ -4102,64 +4088,64 @@ body #page #footer #block-block-2 .menu li {
   vertical-align: top;
 }
 
-/* line 807, ../sass/styles.scss */
+/* line 796, ../sass/styles.scss */
 .node-type-news #page-title {
   text-align: center;
   background: #ffffff;
   top: 10px;
 }
-/* line 812, ../sass/styles.scss */
+/* line 801, ../sass/styles.scss */
 .node-type-news #content {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px 20px 0px 20px;
 }
-/* line 817, ../sass/styles.scss */
+/* line 806, ../sass/styles.scss */
 .node-type-news #content .node-news .field-name-body {
   border: 1px solid #f090b6;
   padding: 40px 20px 20px 20px;
 }
 
-/* line 827, ../sass/styles.scss */
+/* line 816, ../sass/styles.scss */
 .page-user #content {
   padding: 20px;
   max-width: 1440px;
   margin: 0 auto;
 }
-/* line 831, ../sass/styles.scss */
+/* line 820, ../sass/styles.scss */
 .page-user #content label {
   padding: 10px 0px;
   color: #f090b6;
 }
-/* line 835, ../sass/styles.scss */
+/* line 824, ../sass/styles.scss */
 .page-user #content input {
   background: #ffffff;
   border: 1px solid #f090b6;
   padding: 5px;
 }
-/* line 840, ../sass/styles.scss */
+/* line 829, ../sass/styles.scss */
 .page-user #content .description {
   color: #f090b6;
 }
-/* line 844, ../sass/styles.scss */
+/* line 833, ../sass/styles.scss */
 .page-user #content #edit-actions input {
   background: #f090b6;
   color: #ffffff;
   padding: 10px;
 }
 
-/* line 854, ../sass/styles.scss */
+/* line 843, ../sass/styles.scss */
 table {
   font-size: 14px;
   table-layout: fixed;
   width: 100%;
   text-align: center;
 }
-/* line 859, ../sass/styles.scss */
+/* line 848, ../sass/styles.scss */
 table a.active {
   color: #d43f3f;
 }
-/* line 862, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 table td {
   width: 1px;
   /**white-space: nowrap; // 自适應寬度**/
@@ -4167,12 +4153,12 @@ table td {
   height: 32px;
   vertical-align: middle;
 }
-/* line 870, ../sass/styles.scss */
+/* line 859, ../sass/styles.scss */
 table thead tr {
   border-bottom: 1px solid #7a7a7a;
   background: #f090b6;
 }
-/* line 873, ../sass/styles.scss */
+/* line 862, ../sass/styles.scss */
 table thead tr th {
   color: #ffffff;
   border: 1px #7a7a7a solid;
@@ -4180,12 +4166,12 @@ table thead tr th {
   height: 32px;
   vertical-align: middle;
 }
-/* line 882, ../sass/styles.scss */
+/* line 871, ../sass/styles.scss */
 table tbody {
   border: 1px solid #7a7a7a;
   color: #7a7a7a;
 }
-/* line 886, ../sass/styles.scss */
+/* line 875, ../sass/styles.scss */
 table tbody tr.odd,
 table tbody tr.even {
   border: 0px;
@@ -4193,14 +4179,14 @@ table tbody tr.even {
   background-color: transparent;
   border: 1px solid #7a7a7a;
 }
-/* line 891, ../sass/styles.scss */
+/* line 880, ../sass/styles.scss */
 table tbody tr.odd input[type="text"],
 table tbody tr.even input[type="text"] {
   text-align: center;
   border: 1px #7a7a7a solid;
   width: 50%;
 }
-/* line 896, ../sass/styles.scss */
+/* line 885, ../sass/styles.scss */
 table tbody tr.odd input[type="submit"],
 table tbody tr.even input[type="submit"] {
   border: 0px;
@@ -4209,22 +4195,22 @@ table tbody tr.even input[type="submit"] {
   background-color: #00437b;
   color: #FFF;
 }
-/* line 906, ../sass/styles.scss */
+/* line 895, ../sass/styles.scss */
 table .views-field-edit-quantity span.commerce-quantity-plusminus-link {
   display: none;
 }
 
-/* line 912, ../sass/styles.scss */
+/* line 901, ../sass/styles.scss */
 .checkout-processing {
   display: none;
 }
 
-/* line 917, ../sass/styles.scss */
+/* line 906, ../sass/styles.scss */
 #edit-actions,
 #edit-buttons {
   padding: 10px 0px;
 }
-/* line 920, ../sass/styles.scss */
+/* line 909, ../sass/styles.scss */
 #edit-actions input,
 #edit-buttons input {
   background: #f090b6;
@@ -4233,46 +4219,46 @@ table .views-field-edit-quantity span.commerce-quantity-plusminus-link {
   margin: 0 10px;
 }
 
-/* line 931, ../sass/styles.scss */
+/* line 920, ../sass/styles.scss */
 .page-cart #page-title {
   text-align: center;
 }
-/* line 934, ../sass/styles.scss */
+/* line 923, ../sass/styles.scss */
 .page-cart #content {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
-/* line 941, ../sass/styles.scss */
+/* line 930, ../sass/styles.scss */
 .page-cart #content table thead tr {
   border: none;
 }
-/* line 943, ../sass/styles.scss */
+/* line 932, ../sass/styles.scss */
 .page-cart #content table thead tr th {
   border: none;
 }
-/* line 948, ../sass/styles.scss */
+/* line 937, ../sass/styles.scss */
 .page-cart #content table tbody {
   border: none;
 }
-/* line 951, ../sass/styles.scss */
+/* line 940, ../sass/styles.scss */
 .page-cart #content table tbody tr.odd,
 .page-cart #content table tbody tr.even {
   border: none;
   border-bottom: 1px solid #f090b6;
 }
-/* line 955, ../sass/styles.scss */
+/* line 944, ../sass/styles.scss */
 .page-cart #content table tbody tr.odd input[type="submit"],
 .page-cart #content table tbody tr.even input[type="submit"] {
   background: #f090b6;
   border-color: #ffffff;
 }
-/* line 960, ../sass/styles.scss */
+/* line 949, ../sass/styles.scss */
 .page-cart #content table tbody tr.even {
   border-top: 1px solid #f090b6;
   border-bottom: 1px solid #f090b6;
 }
-/* line 968, ../sass/styles.scss */
+/* line 957, ../sass/styles.scss */
 .page-cart #content #edit-actions,
 .page-cart #content #edit-buttons {
   padding-bottom: 110px !important;
@@ -4280,69 +4266,69 @@ table .views-field-edit-quantity span.commerce-quantity-plusminus-link {
   border-bottom: 1px solid #f090b6;
 }
 
-/* line 979, ../sass/styles.scss */
+/* line 968, ../sass/styles.scss */
 .page-checkout #page-title {
   text-align: center;
 }
-/* line 982, ../sass/styles.scss */
+/* line 971, ../sass/styles.scss */
 .page-checkout #content {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
   border-bottom: 1px solid #f090b6;
 }
-/* line 987, ../sass/styles.scss */
+/* line 976, ../sass/styles.scss */
 .page-checkout #content .checkout-completion-message {
   text-align: center;
   font-size: 20px;
 }
-/* line 1004, ../sass/styles.scss */
+/* line 993, ../sass/styles.scss */
 .page-checkout #content table tbody tr.odd .pane-data-full .field,
 .page-checkout #content table tbody tr.even .pane-data-full .field {
   clear: both;
   padding: 10px;
 }
-/* line 1008, ../sass/styles.scss */
+/* line 997, ../sass/styles.scss */
 .page-checkout #content table tbody tr.odd .pane-data-full .field .field-label,
 .page-checkout #content table tbody tr.even .pane-data-full .field .field-label {
   float: left;
 }
-/* line 1011, ../sass/styles.scss */
+/* line 1000, ../sass/styles.scss */
 .page-checkout #content table tbody tr.odd .pane-data-full .field .field-items,
 .page-checkout #content table tbody tr.even .pane-data-full .field .field-items {
   float: left;
 }
-/* line 1017, ../sass/styles.scss */
+/* line 1006, ../sass/styles.scss */
 .page-checkout #content table tbody .pane-title {
   background: #f090b6;
   color: #ffffff;
 }
-/* line 1023, ../sass/styles.scss */
+/* line 1012, ../sass/styles.scss */
 .page-checkout #content fieldset {
   margin-bottom: 20px;
   border-color: #fbd2e2;
 }
-/* line 1026, ../sass/styles.scss */
+/* line 1015, ../sass/styles.scss */
 .page-checkout #content fieldset .fieldset-legend {
   font-size: 30px;
   color: #f090b6;
 }
-/* line 1031, ../sass/styles.scss */
+/* line 1020, ../sass/styles.scss */
 .page-checkout #content #edit-buttons {
   border: none;
 }
-/* line 1035, ../sass/styles.scss */
+/* line 1024, ../sass/styles.scss */
 .page-checkout #content #edit-account input {
   max-width: 500px;
   width: 100%;
   background: #ffffff;
   border: 2px solid;
 }
-/* line 1043, ../sass/styles.scss */
+/* line 1032, ../sass/styles.scss */
 .page-checkout #content #edit-customer-profile-billing label {
   color: #7a7a7a;
 }
-/* line 1046, ../sass/styles.scss */
+/* line 1035, ../sass/styles.scss */
 .page-checkout #content #edit-customer-profile-billing input {
   max-width: 500px;
   width: 100%;
@@ -4350,13 +4336,13 @@ table .views-field-edit-quantity span.commerce-quantity-plusminus-link {
   border: 1px solid #7a7a7a;
   padding: 10px;
 }
-/* line 1055, ../sass/styles.scss */
+/* line 1044, ../sass/styles.scss */
 .page-checkout #content #edit-actions,
 .page-checkout #content #edit-buttons {
   text-align: center;
   padding-bottom: 110px !important;
 }
-/* line 1058, ../sass/styles.scss */
+/* line 1047, ../sass/styles.scss */
 .page-checkout #content #edit-actions input,
 .page-checkout #content #edit-buttons input {
   border: none;
